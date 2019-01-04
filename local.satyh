@@ -1,0 +1,30 @@
+@require: stdjabook
+
+let-inline ctx \set-non-cjk-font name it =
+  let ctx =
+    ctx |> set-font Latin (name, 1., 0.)
+        |> set-font OtherScript (name, 1., 0.)
+  in
+  read-inline ctx it
+
+let-block ctx +specimen-georgian name =
+  let name-it = embed-string name in
+  read-block ctx '<
+    +subsection(name-it) <
+      +p {
+        \set-non-cjk-font(name){
+          #name-it;
+        }
+      }
+      +p {
+        \set-non-cjk-font(name){
+          აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰჱჲჳჴჵჶჷჸჹჺ჻ჼჽჾჿ
+        }
+      }
+      +p {
+        \set-non-cjk-font(name){
+          ყველა ადამიანი იბადება თავისუფალი და თანასწორი თავისი ღირსებითა და უფლებებით. მათ მინიჭებული აქვთ გონება და სინდისი და ერთმანეთის მიმართ უნდა იქცეოდნენ ძმობის სულისკვეთებით.
+        }
+      }
+    >
+  >

@@ -1,0 +1,62 @@
+@require: stdjabook
+@require: code
+@require: itemize
+@import: local
+
+document (|
+  title = {\SATySFi;-fonts-GeoLab};
+  author = {\@na4zagin3};
+  show-title = true;
+  show-toc = false;
+|) '<
+  +p {
+    このパッケージはGeoLab作のフォント\code(`https://fonts.ge/en/pack/41/GeoLab-fonts`);
+	を提供する。
+  }
+  +section({書体見本}) <
+    +specimen-georgian(`GLAkademiuri-Regular`);
+    +specimen-georgian(`GLChonchkhi-Book`);
+    +specimen-georgian(`GLChonchkhi-Light`);
+    +specimen-georgian(`GLChonchkhi-Regular`);
+    +specimen-georgian(`GLDumbadzeGarnituri-Semibold`);
+    +specimen-georgian(`GLEreklesStamba-Regular`);
+    +specimen-georgian(`GLGiorgiNikoladze-Regular`);
+    +specimen-georgian(`GLGordeziani-Bold`);
+    +specimen-georgian(`GLGordeziani-Light`);
+    +specimen-georgian(`GLGordeziani-Medium`);
+    +specimen-georgian(`GLGordeziani-Regular`);
+    +specimen-georgian(`GLGordeziani-UltraLight`);
+    +specimen-georgian(`GLItaliuri-Regular`);
+    +specimen-georgian(`GLKirovi-Bold`);
+    +specimen-georgian(`GLKupiura-Bold`);
+    +specimen-georgian(`GLKupiura-Light`);
+    +specimen-georgian(`GLKupiura-Medium`);
+    +specimen-georgian(`GLKupiura-Regular`);
+    +specimen-georgian(`GLKupiura-UltraLight`);
+    +specimen-georgian(`GLLortkipanidze-Bold`);
+    +specimen-georgian(`GLLortkipanidze-Regular`);
+    +specimen-georgian(`GLMkafio-Book`);
+    +specimen-georgian(`GLMkafio-ExtraLight`);
+    +specimen-georgian(`GLMkafio-Light`);
+    +specimen-georgian(`GLMkafio-Regular`);
+    +specimen-georgian(`GLMkafio-Thin`);
+    +specimen-georgian(`GLMkafio-UltraLight`);
+    +specimen-georgian(`GLMoskovis-Regular`);
+    +specimen-georgian(`GLParizuli-Bold`);
+    +specimen-georgian(`GLParizuli-Medium`);
+    +specimen-georgian(`GLParizuli-Regular`);
+    +specimen-georgian(`GLSaeklesio-Regular`);
+    +specimen-georgian(`GLSatitulo-Regular`);
+    +specimen-georgian(`GLTatishvili12-Normal`);
+    +specimen-georgian(`GLTatishviliMetal-Bold`);
+    +specimen-georgian(`GLUniversiteti-Regular`);
+    +specimen-georgian(`GLVenuri-Bold`);
+    +specimen-georgian(`GLVenuri-Book`);
+    +specimen-georgian(`GLVenuri-ExtraLight`);
+    +specimen-georgian(`GLVenuri-Heavy`);
+    +specimen-georgian(`GLVenuri-Light`);
+    +specimen-georgian(`GLVenuri-Medium`);
+    +specimen-georgian(`GLVenuri-Regular`);
+    +specimen-georgian(`GLVenuri-Thin`);
+  >
+>
