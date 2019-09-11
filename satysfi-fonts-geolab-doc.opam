@@ -23,19 +23,24 @@ extra-source "geolab-fonts.zip" {
 depends: [
   "satysfi" {>= "0.0.3" & < "0.0.4"}
   "satyrographos" {>= "0.0.2" & < "0.0.3"}
+  "satysfi-lib-dist"
+  "satysfi-fonts-geolab"
 ]
 build: [
-  ["unzip" "-o" "geolab-fonts.zip" "*.ttf" "-d" "geolab-fonts"]
+  ["satyrographos" "opam" "build"
+   "-name" "fonts-geolab-doc"
+   "-prefix" "%{prefix}%"
+   "-script" "%{build}%/Satyristes"]
 ]
 install: [
   ["satyrographos" "opam" "install"
-   "-name" "fonts-geolab"
+   "-name" "fonts-geolab-doc"
    "-prefix" "%{prefix}%"
    "-script" "%{build}%/Satyristes"]
 ]
 remove: [
   ["satyrographos" "opam" "uninstall"
-   "-name" "fonts-geolab"
+   "-name" "fonts-geolab-doc"
    "-prefix" "%{prefix}%"
    "-script" "%{build}%/Satyristes"]
 ]
