@@ -9,7 +9,7 @@ If you don't have them, please install them with this [instruction](https://gith
 
 ### Install SATySFi-Fonts-GeoLab
 ```sh
-$ git pin add "git+https://github.com/na4zagin3/SATySFi-fonts-geolab.git"
+$ opam pin add satysfi-fonts-geolab https://github.com/na4zagin3/SATySFi-fonts-geolab.git
 $ opam install satysfi-fonts-geolab
 $ satyrographos install
 ```
